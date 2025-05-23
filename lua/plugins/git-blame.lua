@@ -5,7 +5,7 @@ return {
     config = function()
       require("gitblame").setup({
         enabled = true,
-        message_template = " <date> • <author>",
+        message_template = " <date> • <author> • <summary>",
         date_format = "%r",
         virtual_text_column = 80,
       })
