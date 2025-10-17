@@ -98,7 +98,8 @@ If no issues found, confirm the code is well-written and explain why.
       separator = "...",
 
       window = {
-        width = 0.3,
+        width = 45,
+        zindex = 100,
       },
       show_folds = false,
       mappings = {
