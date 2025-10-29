@@ -96,7 +96,6 @@ If no issues found, confirm the code is well-written and explain why.
       },
 
       separator = "...",
-      model = "gpt-5",
 
       window = {
         width = 45,
