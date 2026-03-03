@@ -11,7 +11,7 @@ return {
       prompts = {
         CommitAll = {
           system_prompt = "You are a highly detail-oriented and experienced Senior Staff Engineer. Your task is to generate a pristine commit message.",
-          prompt = "Based on the provided git diffs, generate a single commit message following the **Commitizen convention** (type(scope): subject). \n\n**CRITICAL GUIDELINES:**\n1. The commit type must be one of: feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert.\n2. **Title (Subject) must not exceed 50 characters.**\n3. **Body lines must be wrapped up to 72 characters.**\n4. **No introductory text, explanations, or extraneous commentary.**\n5. Format the final output *only* as a single gitcommit code block.\n\n*This message is for a real codebase, treat it with professional rigor.*",
+          prompt = "Based on the provided git diffs, generate a single commit message following the **Commitizen convention** (type(scope): subject). \n\n**CRITICAL GUIDELINES:**\n1. The commit type must be one of: feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert.\n2. **Title (Subject) must not exceed 50 characters.**\n3. **Body lines must be wrapped up to 72 characters.**\n4. Format the final output *only* as a single gitcommit code block.\n\n*This message is for a real codebase, treat it with professional rigor.*",
           sticky = "#gitdiff:unstaged #gitdiff:staged",
         },
         ExplainChanged = {
