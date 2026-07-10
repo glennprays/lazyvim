@@ -32,6 +32,13 @@ require("lazy").setup({
   },
   install = { colorscheme = { "habamax" } },
   checker = { enabled = true }, -- automatically check for plugin updates
+  git = {
+    -- Full clone instead of --filter=blob:none partial clone. Plugins that bundle
+    -- large payloads (e.g. copilot.lua's Copilot LSP) otherwise backfill every blob
+    -- on-demand during checkout, blowing past git.timeout and dying with SIGTERM.
+    filter = false,
+    timeout = 300, -- safety net for large-payload plugins (default 120)
+  },
   performance = {
     rtp = {
       -- disable some rtp plugins
